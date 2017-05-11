@@ -324,18 +324,21 @@ console.log(moneyTrain(150));
   	 var doughnutPrice = 1;
   	 var doughnutBought = 0;
 
-/*var budget = 25;
+var budget = 25;
 var doughnutPrice = 5;
 var doughnutBought = 0;
 
   function buyDoughnut(){
-  	 
+  	 if (budget >= doughnutPrice){
+  	 	budget -= doughnutPrice;
+  	 	doughnutBought ++;
+  	 }
   	 
   }
 
 buyDoughnut();
 console.log(budget);
-console.log(doughnutBought);*/
+console.log(doughnutBought);
 
 
 
