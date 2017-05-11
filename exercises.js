@@ -29,6 +29,15 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * The function will return true if the number passed into the function is equal to or greater than Hawaii's voting age. Console.log your result.
 */
 
+function canVote(age){
+if (age >= 18){
+	return true;
+		}else{
+	return false;
+	}
+}
+
+console.log(canVote(19));
 
 /*
  * #2
@@ -42,7 +51,13 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * Console.log your result.
 */
 
+function login(password){
+	if(password === "test1234"){
+		return "Login Success!";
+	}
+}
 
+console.log(login("test1234"));
 /*
  * #3
  * Function - isGreaterThan
@@ -56,7 +71,15 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * Console.log your result.
 */
 
+function isGreaterThan(first, second){
+	if (first > second){
+		return true;
+	}else{
+		return false;
+	}
+}
 
+console.log(isGreaterThan(3,1));
 
 /*
  * #4
@@ -70,8 +93,15 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * Console.log your result.
 */
 
+function mustBeTrue(boo){
+	if (boo.length > 3){
+		return true;
+	}else{
+		return false;
+	}
+}
 
-
+console.log(mustBeTrue("alpaca"));
 /*
  * #5
  * Function - bigBird
@@ -84,8 +114,15 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * Console.log your result.
 */
 
+function bigBird(word){
+	if (word.length === 3){
+		return "Word to Big Bird!";
+	}else{
+		return "No new words";
+	}
+}
 
-
+console.log(bigBird("cow"));
 /*
  * #6
  * Function - isEqual
@@ -99,6 +136,15 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * Console.log your result.
 */
 
+function isEqual(first, second){
+	if(first === second){
+		return "You look mahvelous!";
+	}else{
+		return "I don't know who you are anymore.";
+	}
+}
+
+console.log(isEqual("hat","hat"));
 
 /*
  * #7
@@ -113,7 +159,15 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * Console.log your result.
 */
 
+function notEqual(first, second){
+	if(first !== second){
+		return "Opposites do attract.";
+	}else{
+		return "Cause it's like you're my mirror.";
+	}
+}
 
+console.log(notEqual("yes","no"));
 /*
  * #8
  * Function - spareChange
@@ -126,8 +180,15 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * Console.log your result.
 */ 
 
+function spareChange(money){
+	if(money > 100){
+		return true;
+	}else{
+		return false;
+	}
+}
 
-
+console.log(spareChange(101));
 /*
  * #9
  * Function - dirty30
@@ -143,7 +204,16 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
 */ 
 
 
+function dirty30(one,two,three){
+	var sum = one + two + three;
+	if( sum > 30){
+		return true;
+	}else {
+		return false;
+	}
+}
 
+console.log(dirty30(1,2,3));
 /*
  * #10
  * Function - evenStevens
@@ -156,8 +226,16 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * Console.log your result.
 */ 
 
+function evenStevens(num){
+	
+	if(num%2 === 0){
+		return true;
+	}else{
+		return false;
+	}
+}
 
-
+console.log(evenStevens(10));
 
 /*
  * #11
@@ -172,6 +250,15 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * Console.log your result.
 */ 
 
+function daClub(cover, age){
+	if (cover >=21 && age >=21){
+		return "Welcome to the Legends Lounge."; 
+	}else{ 
+		return "Chuck E Cheese is across the street.";
+	}
+}
+
+console.log(daClub(20,21));
 
 /*
  * #12
@@ -186,8 +273,15 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * Console.log your result.
 */ 
 
+function graduation(credit, thesis){
+	if (credit >= 120 || thesis >= 120){
+		return "Congratulations on a job well done.";
+	}else{
+		return "See you in summer school.";
+	}
+}
 
-
+console.log(graduation(110, 120));
 /*
  * #13
  * Function - moneyTrain
@@ -199,8 +293,20 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * The function will return the message: "You are riding Honolulu's Rail.", if the number value is less than 50, otherwise it will return the message: "You are riding an Amtrak.", if the number value is less than 100, and return the message: "Now you ballin' in the Shinkansen!", if the number value is greater than or equal to 100.
  * Console.log your result.
 */ 
+ 
+ function  moneyTrain(speed){
+ 	if(speed < 50){
+ 		return "You are riding Honolulu's Rail.";
+ 	}else if (speed < 100){
+ 		return "You are riding an Amtrak.";
+ 	}else{
+ 		return "Now you ballin' in the Shinkansen!";
+ 	}
+}
 
-
+console.log(moneyTrain(49));
+console.log(moneyTrain(99));
+console.log(moneyTrain(150));
 /*
  * #14
  * Function - buyDoughnut
@@ -214,8 +320,22 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * Invoke your function again.
  * Console.log budget and doughnutBought again.
 */ 
+		 var budget = 21;
+  	 var doughnutPrice = 1;
+  	 var doughnutBought = 0;
 
+/*var budget = 25;
+var doughnutPrice = 5;
+var doughnutBought = 0;
 
+  function buyDoughnut(){
+  	 
+  	 
+  }
+
+buyDoughnut();
+console.log(budget);
+console.log(doughnutBought);*/
 
 
 
@@ -246,6 +366,10 @@ for (var i = 0; i<toyotaModels.length; i++){
  * "Player: 5"
 */
 
+var players = ["Player: 1", "Player: 2", "Player: 3", "Player: 4", "Player: 5"];
+for (var i = 0; i<players.length; i++){
+	console.log(players[i]);
+}
 
 /* 
  * #16
@@ -253,6 +377,9 @@ for (var i = 0; i<toyotaModels.length; i++){
 */
   var myFavFoods = ["lemon bar", "carrot cake", "nachos", "bacon cheeseburger", "ramen", "sweet potato fries", "chimichanga"];
 
+for (var i = 0; i<myFavFoods.length; i++){
+	console.log(myFavFoods[i]);
+}
 
 /*
  * #17
@@ -269,8 +396,18 @@ for (var i = 0; i<toyotaModels.length; i++){
  * Console.log your result.
 */
 
+var numArray = [0, 2, 5, 1, 10];
+var total = 0;
 
+function sumItUp(arr){
+	for(var i = 0; i<arr.length; i++){
+		console.log(arr[i]);
+		total += arr[i];
+	}
+		return total;
+}
 
+console.log(sumItUp(numArray));
 /*
  * #18
  * Function - allStars
@@ -284,6 +421,8 @@ for (var i = 0; i<toyotaModels.length; i++){
 */ 
 
 var players = ["Yao Ming", "BrookLin", " Jesus Shuttlesworth", "Manute Bol", "Sidney Deane", "World B Free"];
+
+
 /*
  * #19
  * Function - subways
