@@ -397,17 +397,19 @@ for (var i = 0; i<myFavFoods.length; i++){
 */
 
 var numArray = [0, 2, 5, 1, 10];
+
 var total = 0;
 
 function sumItUp(arr){
+	
 	for(var i = 0; i<arr.length; i++){
-		console.log(arr[i]);
-		total += arr[i];
-	}
-		return total;
+			total += arr[i]; 
+	} return total;
+
 }
 
 console.log(sumItUp(numArray));
+
 /*
  * #18
  * Function - allStars
